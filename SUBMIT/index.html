@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SUBMIT</title>
+
+  <!-- SweetAlert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+  <!-- JS -->
+  <script src="index.js"></script>
+</head>
+
+<body>
+
+ 
+
+  <div class="content">
+
+    <li>
+      <a href="http://localhost/assessment/MAIN%20PAGE/index.html" target="_blank" class="button">
+        GO BACK TO MAIN PAGE
+      </a>
+    </li>
+
+    <a href="http://localhost/assessment/CONTACT%20US/index.html" id="contact-us-link" class="button">
+      CONTACT US
+    </a>
+
+    <a href="http://localhost/assessment/WHO%20ARE%20WE/index.html" id="who-are-we-link" class="button">
+      WHO ARE WE
+    </a>
+
+    <h1>TRIPS TO THESSALONIKI</h1>
+    <p>SUBMIT YOUR REQUEST</p>
+
+    <section id="SUBMIT">
+      <h2>SUBMIT TRIP</h2>
+
+      <div class="container">
+        <h2>Send us a Message</h2>
+
+        <form id="SUBMITFORM" method="POST" action="process.php">
+
+          <label>Name:</label>
+          <input type="text" name="name" required>
+
+          <label>Email:</label>
+          <input type="email" name="email" required>
+
+          <label>Trip:</label>
+          <select name="trip" required>
+            <option value="">-- Select a Trip --</option>
+            <option value="TOUR TO THE CITY CENTER">TOUR TO THE CITY CENTER</option>
+            <option value="THESSALONIKI FROM THE SEA">THESSALONIKI FROM THE SEA</option>
+            <option value="UPPER CITY AND HEPTAPYRGION">UPPER CITY AND HEPTAPYRGION</option>
+          </select>
+
+          <label>Message:</label>
+          <textarea name="message" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CONTACT US</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <button id="theme-toggle">mode</button>
+
+  <!-- Main Content -->
+  <div class="content">
+      <li>
+        <a href="http://localhost/assessment/MAIN%20PAGE/index.html" target="_blank" class="button">
+          <i class="fa-solid fa-tower-observation"></i> GO BACK TO MAIN PAGE
+        </a>
+      </li>
+       <a href="http://localhost/assessment/WHO%20ARE%20WE/index.html" id="who-are-we-link" class="button">
+  <i class="fa-solid fa-envelope"></i> WHO ARE WE
+</a>
+
+    <h1>TRIPS TO THESSALONIKI</h1>
+    <P>FOR ANY INFORMATION</P>
+    <p>CONTACT US WITH PHONE NUMBER</p>
+    <p>2310 3099 999 999</p>
+    <p> or you can </p>
+
+    <section id="contact">
+      <h2>CONTACT US WITH EMAIL</h2>
+
+    <div class="container">
+ <h2>Send us a Message</h2>
+ <?php echo $message; ?>
+ <form method="POST" action="process.php">
+ <label>Name:</label>
+ <input type="text" name="name" required>
+ <label>Email:</label>
+ <input type="email" name="email" required>
+ <label>Message:</label>
+ <textarea name="message" rows="4"></textarea>
+ <button type="submit">Submit</button>
+ </form>
+
+    
+
+  </div>
+
+  <!-- JS -->
+  <script src="index.js"></script>
+</body>
+</html>

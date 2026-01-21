@@ -1,0 +1,164 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #ffffff;
+  --bg-image: url('ASSESSMENT.jpg');
+
+  /* Light mode box background */
+  --content-bg: #a19f9fea;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  color: var(--text-color);
+  transition: background 0.5s ease, color 0.5s ease;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+body.dark {
+  --bg-color: #ffffff;
+  --text-color: #ffffff;
+  --bg-image: url('ASSESSMENT2.jpg');
+
+  /* Dark mode box background */
+  --content-bg: #4c4b4b;
+}
+
+/* Content Box */
+.content {
+  position: relative;
+  z-index: 1;
+  color: var(--text-color);
+  text-shadow: 1px 1px 3px rgb(0, 30, 255);
+  padding: 20px;
+  background: var(--content-bg);
+  border-radius: 15px;
+  transition: background 0.5s ease;
+}
+
+.content h1 {
+  font-size: 48px;
+}
+
+.content p {
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 15px 0;
+}
+
+/* Neon Buttons */
+a.button {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 20px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #f3f2f2;
+  border-radius: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #f3f2f2, 0 0 20px #f3f2f2;
+  transition: all 0.3s ease-in-out;
+}
+
+a.button:hover {
+  background-color: #037dff;
+  color: #f1eded;
+  box-shadow: 0 0 20px #037dff, 0 0 30px #f3f2f2;
+  transform: scale(1.05);
+}
+
+.button i {
+  margin-right: 8px;
+}
+
+/* Top-right toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #f1eded;
+  color: #037dff;
+  box-shadow: 0 0 20px #037dff, 0 0 30px #f3f2f2;
+  transition: background 0.3s;
+  z-index: 1000;
+}
+
+#theme-toggle:hover {
+  background-color: rgb(253, 253, 253);
+}
+
+/* CONTACT US button */
+#contact-us-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: #4c4b4b;
+  color: #037dff;
+  box-shadow: 0 0 20px #037dff, 0 0 30px #f3f2f2;
+}
+
+#contact-us-link:hover {
+  background-color: #4c4b4b;
+  transform: scale(1.05);
+}
+
+
+
+#contact-us-link:hover {
+  background-color:  #4c4b4b;
+  transform: scale(1.05);
+}
+#contact {
+  background-color: #ff000000;
+  padding: 2em;
+}
+#who-are-we-link {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: #f1eded;
+  color: #037dff;
+  box-shadow: 0 0 20px #037dff, 0 0 30px #f3f2f2;
+}
+
+#who-are-we-link:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
